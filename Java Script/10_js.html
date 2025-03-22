@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>If else</title>
+	<script>
+		function relation() {
+			if (document.getElementById("t1").value == document.getElementById("t2").value) 
+			{
+				window.alert(" Both r Equal ")
+			}
+			else if (document.getElementById("t1").value >document.getElementById("t2").value)
+			 {
+				window.alert(" 1st num is greater than 2nd num ")
+			}
+			else
+			{
+				window.alert("1st num is smaller than 2nd num ")
+			}
+		}
+	</script>
+</head>
+<body>
+<h1> Enter 1st num : <input type="text" id="t1"><br></h1>
+<h1> Enter 2nd num : <input type="text" id="t2"><br></h1>
+<button type="button" onclick="relation()">Verify</button>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>loading</title>
+</head>
+<style>
+	body
+	{
+		background-color: black;
+	}
+   div
+    {
+		
+		top: 200px;
+		position: relative;
+		left: 300px;
+	}
+	div span
+	{
+		background-color: blue;
+		width: 10px;
+		height: 70px;
+		display: inline-block;
+		margin: 10px;
+		border-radius: 100%;
+		
+		animation: loading 1s linear 0s infinite normal;
+	}
+	@keyframes loading
+	{
+		0%,100%
+		{
+			transform: scale(1.5);
+		}
+		50%
+		{
+			transform: scale(1.0);
+		}
+	}
+	div>span:nth-child(1)
+	{
+		
+		animation-delay: 0.1s;
+	}
+	div>span:nth-child(2)
+	{
+		
+		animation-delay: 0.2s;
+		height: 35px;
+		margin-bottom: 30px;
+	}
+	div>span:nth-child(3)
+	{
+		
+		animation-delay: 0.1s;
+	}
+	div>span:nth-child(4)
+	{
+		height: 35px;
+		margin-bottom: 30px;
+		animation-delay: 0.2s;
+	}
+	div>span:nth-child(5)
+	{
+		
+		animation-delay: 0.1s;
+	}
+	div>span:nth-child(6)
+	{
+		height: 35px;
+		margin-bottom: 30px;
+		animation-delay: 0.2s;
+	}
+	div>span:nth-child(7)
+	{
+		
+		animation-delay: 0.1s;
+	}
+
+</style>
+<body>
+<div>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</body>
+</html>
